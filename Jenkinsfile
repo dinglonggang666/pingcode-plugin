@@ -15,7 +15,7 @@ podTemplate(label: label, cloud: 'kubernetes',
     volumes: [
         hostPathVolume(mountPath: '/var/run/docker.sock', hostPath: '/var/run/docker.sock'),
         hostPathVolume(mountPath: '/root/.ssh', hostPath: '/root/.ssh'),
-        hostPathVolume(mountPath: '/mnt', hostPath: '/date/cache/pingcode-plugin')
+        hostPathVolume(mountPath: '/mnt', hostPath: '/worktile/data/jenkins/cache/pingcode-plugin')
     ]
 ) {
     node(label) {
